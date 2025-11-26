@@ -28,13 +28,13 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-npm-cache
       - name: Install Dependencies
-          run: cd Hexo && npm install
+        run: cd Hexo && npm install
       - name: Build
-          run: cd Hexo && npm run build
+        run: cd Hexo && npm run build
       - name: Upload Pages artifact
-          uses: actions/upload-pages-artifact@v3
-          with:
-            path: ./Hexo/public
+        uses: actions/upload-pages-artifact@v3
+        with:
+          åpath: ./Hexo/public
   deploy:
     needs: build
     permissions:
