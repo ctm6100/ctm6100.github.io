@@ -1,9 +1,10 @@
-version: '3.8'
+
 services:
 
   hexo:
-    image: node:18
+    image: node:24
     working_dir: /app
+    command: sh -c "npm install -g hexo-cli && sleep infinity"
     volumes:
       - ./:/app
     ports:
