@@ -33,6 +33,7 @@ jspm_packages/
 # Static site generators
 .cache/
 public/
+Hexo/public/
 
 # Ignore by default
 *.bak
