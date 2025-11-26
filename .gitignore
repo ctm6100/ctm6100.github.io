@@ -39,3 +39,9 @@ public/
 *.tmp
 
 # Optional: add more patterns as needed
+# Hexo
+db.json
+public/
+deploy/
+node_modules/
+*.log
