@@ -34,7 +34,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          åpath: ./Hexo/public
+          path: ./Hexo/public
   deploy:
     needs: build
     permissions:
