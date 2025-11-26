@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+
+  hexo:
+    image: node:18
+    working_dir: /app
+    volumes:
+      - ./:/app
+    ports:
+      - "4000:4000"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=development
