@@ -27,6 +27,8 @@ jobs:
           key: ${{ runner.OS }}-npm-cache
           restore-keys: |
             ${{ runner.OS }}-npm-cache
+      - name: Clone Arknights Theme
+        run: git clone https://github.com/ctm6100/hexo-theme-arknights.git Hexo/themes/arknights
       - name: Install Dependencies
         run: cd Hexo && npm install
       - name: Build
