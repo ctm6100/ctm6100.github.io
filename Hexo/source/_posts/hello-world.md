@@ -1,5 +1,9 @@
 ---
-title: Hello World
+title: test new encryption
+tags: encrypt
+category: Example
+excerpt: true
+password: 1234
 ---
 
 # testing 

@@ -3,8 +3,7 @@ services:
 
   hexo:
     image: node:24
-    working_dir: /app
-    command: sh -c "npm install -g hexo-cli && sleep infinity"
+    working_dir: /app/Hexo
     volumes:
       - ./:/app
     ports:
@@ -12,3 +11,4 @@ services:
     restart: unless-stopped
     environment:
       - NODE_ENV=development
+    command:  bash -c "npm install && hexo server -p 4000 && sleep infinity"
